@@ -1,9 +1,10 @@
 ## Create a simple nginx and ingress-controller to expose PODS.
 
 * Created this scenario on Macbook pro:
-    - Install Docker for mac: version Engine: 18.xx.x
-    - Enable Kubernetes: Click on Docker icon on the taskbar --> Preferences --> Kubernetes
-    ![enable-k8s](images/enable-k8s.jpg?raw=true)
+    - Install Docker for Mac: version Engine: 18.xx.x
+    - Enable Kubernetes: Click on the Docker icon on the taskbar --> Preferences --> Kubernetes
+    ![enable-k8s] <img width="1437" alt="Screenshot 2023-11-06 at 5 52 15 PM" src="https://github.com/vishnue049/k8s-ingress/assets/34649390/10793e08-9c7a-4aa8-97ca-f7ecc8f8c509">
+
 
 * create a nginx-controller using the below command.
     ```bash
@@ -45,7 +46,7 @@
     ```
 * Verify the output
     ```
-    $ curl -kv mohan.local.com/hello
+    $ curl -kv vishnu.local.com/hello
 
     output:
     *   Trying ::1...
