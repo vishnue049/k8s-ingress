@@ -39,13 +39,13 @@
     $ kubectl get ingress -n dev
     ```
     ![ingress](images/ingress.jpg)
-* Append ```mohan.local.com``` in ```/etc/hosts```
+* Append ```vishnu.local.com``` in ```/etc/hosts```
     ```
-    127.0.0.1	localhost mohan.local.com
+    127.0.0.1	localhost vishnu.local.com
     ```
 * Verify the output
     ```
-    $ curl -kv mohan.local.com/hello
+    $ curl -kv vishnu.local.com/hello
 
     output:
     *   Trying ::1...
@@ -54,9 +54,9 @@
     * connect to ::1 port 80 failed: Connection refused
     *   Trying 127.0.0.1...
     * TCP_NODELAY set
-    * Connected to mohan.local.com (127.0.0.1) port 80 (#0)
+    * Connected to vishnu.local.com (127.0.0.1) port 80 (#0)
     > GET /hello HTTP/1.1
-    > Host: mohan.local.com
+    > Host: vishnu.local.com
     > User-Agent: curl/7.54.0
     > Accept: */*
     >
@@ -67,7 +67,7 @@
     < Content-Length: 18
     < Connection: keep-alive
     <
-    * Connection #0 to host mohan.local.com left intact
+    * Connection #0 to host vishnu.local.com left intact
     {"status":"hello"}%
     ```
 
